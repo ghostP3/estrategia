@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> ramiro</title>
+    <title>Services </title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -44,57 +44,35 @@
         .nav-links a:hover {
             text-decoration: underline;
         }
-        .nav-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: #fff;
-            cursor: pointer;
+        .services {
+            padding: 50px 20px;
+            text-align: center;
         }
-        .hamburger {
-            width: 25px;
-            height: 2px;
+        .services h1 {
+            color: #5d8aa8;
+            margin-bottom: 20px;
+        }
+        .service-card {
+            display: inline-block;
             background: #fff;
-            display: block;
-            position: relative;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
-        .hamburger::before,
-        .hamburger::after {
-            content: '';
-            position: absolute;
-            width: 25px;
-            height: 2px;
-            background: #fff;
-            left: 0;
+        .service-card h2 {
+            font-size: 1.2em;
+            color: #333;
         }
-        .hamburger::before {
-            top: -8px;
+        .service-card p {
+            font-size: 1em;
+            color: #666;
         }
-        .hamburger::after {
-            top: 8px;
-        }
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                background-color: #5d8aa8;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                padding: 10px 0;
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            .nav-toggle {
-                display: block;
-            }
-        }
-    </style>PetFinder
+    </style>
 </head>
 <body>
-    <h1>Soy teso en git</h1>
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">Galeria</a>
@@ -104,10 +82,22 @@
                 <li><a href="about.html">about</a></li>
                 <li><a href="galery.html">galery</a></li>
             </ul>
-            <button class="nav-toggle" aria-label="Abrir menú">
-                <span class="hamburger"></span>
-            </button>
         </div>
     </nav>
+    <div class="services">
+        <h1>Servicios</h1>
+        <div class="service-card">
+            <h2>Edicion de fotos</h2>
+            <p>Encuentre rápidamente mascotas perdidas utilizando nuestro confiable sistema de rastreo y nuestra red comunitaria.</p>
+        </div>
+        <div class="service-card">
+            <h2>Asistencia de adopción</h2>
+            <p>Conéctese con refugios e individuos para brindar un hogar amoroso a las mascotas necesitadas.</p>
+        </div>
+        <div class="service-card">
+            <h2>Asociaciones veterinarias</h2>
+            <p>Acceda a servicios veterinarios confiables a través de nuestra red de socios.</p>
+        </div>
+    </div>
 </body>
 </html>

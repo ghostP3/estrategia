@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item {
+            text-align: center;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2024/11/03/12/57/lion-tamarin-9171365_640.jpg" srcset="https://cdn.pixabay.com/photo/2024/11/03/12/57/lion-tamarin-9171365_640.jpg 1x, https://cdn.pixabay.com/photo/2024/11/03/12/57/lion-tamarin-9171365_1280.jpg 2x" alt="León Tamarino">
+            <div class="description">Mono titi de pelo naranja</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2024/11/06/10/06/woman-9178026_960_720.jpg" srcset="https://cdn.pixabay.com/photo/2024/11/06/10/06/woman-9178026_960_720.jpg 1x, https://cdn.pixabay.com/photo/2024/11/06/10/06/woman-9178026_1280.jpg 2x" alt="Mujer en el campo">
+            <div class="description">Mujer en el campo</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2024/07/01/07/11/cats-8864617_960_720.jpg" srcset="https://cdn.pixabay.com/photo/2024/07/01/07/11/cats-8864617_960_720.jpg 1x, https://cdn.pixabay.com/photo/2024/07/01/07/11/cats-8864617_1280.jpg 2x" alt="Gatos descansando">
+            <div class="description">Gatos descansando</div>
+        </div>
+    </div>
+</body>
+</html>
